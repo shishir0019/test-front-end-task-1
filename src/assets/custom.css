@@ -1,0 +1,135 @@
+/* dev */
+
+.t {
+    border: 1px solid red;
+}
+
+:root {
+    --main-color: darkblue;
+    --accent-color: darkblue;
+    --bg-color: #00008b20;
+    --secondary-over-color: #333333;
+  }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* components */
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 650px;
+}
+
+.header {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    color: var(--accent-color);
+}
+
+.header--inline {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header__item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    text-decoration: none;
+    display: flex;
+    font-weight: bold;
+    row-gap: 10px;
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 10px 15px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    opacity: .7;
+}
+
+/* country */
+
+.country {
+    padding: 2px 5px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+.country--header {
+    padding: 2px 5px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #666;
+}
+
+.country:nth-child(even) {
+    background-color: var(--bg-color);
+}
+
+.country:hover {
+    opacity: .7;
+}
+
+.country__item {
+    width: 33.33%;
+    text-align: center;
+}
+
+.country__item:first-child {
+    text-align: left;
+}
+
+.country__item:last-child {
+    text-align: right;
+}
+
+/*  */
+
+.country_detail {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.country_detail__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+.country_detail__item:nth-child(odd) {
+    background-color: var(--bg-color);
+}
+
+.country_detail__item--bold {}
+
+.home_root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    min-height: 400px;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--secondary-over-color);
+}
